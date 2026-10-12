@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Southbridge Rehabilitation - Home</title>
+<style>
+    * { box-sizing: border-box; }
+
+    body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, #eef4f8, #d9e7ef);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #17324d;
+    }
+
+    .container {
+        width: 92%;
+        max-width: 1050px;
+        background: white;
+        border-radius: 18px;
+        box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+        padding: 45px;
+        text-align: center;
+    }
+
+    h1 {
+        margin: 0 0 8px;
+        font-size: 38px;
+        letter-spacing: 1px;
+    }
+
+    h2 {
+        margin: 0 0 35px;
+        font-size: 21px;
+        font-weight: normal;
+        color: #557085;
+    }
+
+    .buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px;
+    }
+
+    .page-button {
+        display: flex;
+        min-height: 150px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-decoration: none;
+        background: #1f5f8b;
+        color: white;
+        border-radius: 14px;
+        padding: 25px;
+        font-size: 22px;
+        font-weight: bold;
+        transition: transform .2s, box-shadow .2s, background .2s;
+    }
+
+    .page-button:hover {
+        background: #174b6e;
+        transform: translateY(-4px);
+        box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+    }
+
+    .icon {
+        font-size: 42px;
+        margin-bottom: 12px;
+    }
+
+    .footer {
+        margin-top: 30px;
+        color: #718394;
+        font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+        .container { padding: 28px 20px; }
+        h1 { font-size: 28px; }
+        .buttons { grid-template-columns: 1fr; }
+    }
+</style>
+</head>
+
+<body>
+<div class="container">
+    <h1>SOUTHBRIDGE REHABILITATION</h1>
+    <h2>Facility Management Home</h2>
+        <a class="page-button" href="SouthbridgeRehabWorkOrder.html">
+            <div class="icon">🛠️</div>
+            Work Orders
+        </a>
+
+        <a class="page-button" href="LOTO.html">
+            <div class="icon">🔒</div>
+            Lockout / Tagout Log
+        </a>
+
+        <a class="page-button" href="PestControlLog.html">
+            <div class="icon">🦟</div>
+            Pest Control Log
+        </a>
+
+        <a class="page-button" href="work_order_log.php">
+            <div class="icon">📋</div>
+            Work Order Log
+        </a>
+		<div class="buttons">
+</div>
+		<a class="page-button" href="logout.php">
+        <div class="icon">🚪</div>
+        Log Out
+    </a>
+    </div>
+
+    <div class="footer">
+        Southbridge Rehabilitation &amp; Health Care Center
+    </div>
+</div>
+</body>
+</html>

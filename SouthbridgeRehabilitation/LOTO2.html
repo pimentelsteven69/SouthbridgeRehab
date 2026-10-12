@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Southbridge Rehabilitation - LOTO Page 2</title>
+<style>
+  @page { size: portrait; margin: 0.6in; }
+  * { box-sizing: border-box; }
+  body { font-family: Arial, Helvetica, sans-serif; margin:0; background:#f3f4f6; color:#111; }
+  .page { max-width:900px; margin:20px auto; background:#fff; padding:28px; box-shadow:0 2px 10px rgba(0,0,0,.12); }
+  h1 { text-align:center; margin:0 0 5px; font-size:25px; }
+  h2 { text-align:center; margin:0 0 22px; font-size:18px; font-weight:normal; }
+  h3 { border-bottom:1px solid #555; padding-bottom:5px; }
+  .buttons { display:flex; gap:8px; margin-bottom:18px; }
+  button { border:0; padding:9px 14px; cursor:pointer; font-weight:bold; border-radius:4px; background:#1d4ed8; color:white; }
+  .back { background:#166534; }
+  .section { border:1px solid #777; padding:12px; margin-bottom:14px; }
+  li { margin:7px 0; line-height:1.35; }
+  .signatures { display:grid; grid-template-columns:1fr 1fr; gap:15px; margin-top:20px; }
+  label { font-weight:bold; font-size:13px; display:block; margin-bottom:4px; }
+  input { width:100%; padding:8px; border:1px solid #777; }
+  .footer { text-align:center; font-size:10px; margin-top:20px; }
+  @media print {
+    body { background:white; }
+    .page { margin:0; max-width:none; box-shadow:none; padding:0; }
+    .buttons { display:none; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>SOUTHBRIDGE REHABILITATION</h1>
+  <h2>LOCKOUT / TAGOUT — PAGE 2</h2>
+
+  <div class="buttons">
+	<button onclick="window.location.href='SouthbridgeRehab.html'">Home Page</button>
+	<button onclick="window.location.href='SouthbridgeRehabWorkOrder.html'">Work Order Form</button>
+    <button class="back" onclick="window.location.href='LOTO.html'">Back to LOTO Log</button>
+    <button onclick="window.print()">Print Page</button>
+    <button onclick="window.location.href='PestControlLog.html'">Pest Control Log</button>
+	
+  </div>
+
+  <div class="section">
+    <h3>LOTO Procedure Checklist</h3>
+    <ol>
+      <li>Notify affected employees that equipment will be shut down.</li>
+      <li>Identify all hazardous energy sources connected to the equipment.</li>
+      <li>Shut down the equipment using normal operating controls.</li>
+      <li>Isolate all energy sources.</li>
+      <li>Apply the authorized employee's lock and tag.</li>
+      <li>Release, block, or restrain stored/residual energy.</li>
+      <li>Verify isolation and zero-energy state before work begins.</li>
+      <li>Perform the maintenance or service work.</li>
+      <li>Inspect the area and make sure guards and components are restored.</li>
+      <li>Remove locks/tags according to the facility's LOTO procedure.</li>
+      <li>Notify affected employees and return equipment to service.</li>
+    </ol>
+  </div>
+
+  <div class="section">
+    <h3>Additional Notes</h3>
+    <textarea style="width:100%;min-height:180px;border:1px solid #777;padding:8px;"></textarea>
+  </div>
+
+  <div class="signatures">
+    <div><label>Supervisor Signature</label><input type="text"></div>
+    <div><label>Date</label><input type="date"></div>
+    <div><label>Authorized Employee Signature</label><input type="text"></div>
+    <div><label>Date</label><input type="date"></div>
+  </div>
+
+  <div class="footer">Southbridge Rehabilitation — Lockout/Tagout Log</div>
+</div>
+</body>
+</html>
